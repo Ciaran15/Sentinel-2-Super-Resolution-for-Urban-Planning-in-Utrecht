@@ -9,6 +9,8 @@ What methodes have we used to obtain these results?
 
 # Dataset
 What data did we use?
+Summer Dataset
+Winter Dataset
 
 # Metrics Evaluation
 PSNR
@@ -24,6 +26,3 @@ stacked images
 
 # How to run
 git clone https://github.com/Ciaran15/Sentinel-2-Super-Resolution-for-Urban-Planning-in-Utrecht/
-cd Sentinel-2-Super-Resolution-for-Urban-Planning-in-Utrecht/
-pip install -r requirements.txt
-python train.py
