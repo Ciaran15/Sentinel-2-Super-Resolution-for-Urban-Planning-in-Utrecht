@@ -13,23 +13,31 @@ Summer Dataset
 Winter Dataset
 
 # Metrics Evaluation
-This repository evaluates image restoration and super-resolution results using multiple quality metrics. Two commonly used metrics are:
 
-CLIP-Score = Measures semantic similarity between images using the OpenAI CLIP model. Higher scores generally indicate that restored images preserve more meaningful visual content and structure.
+This repository evaluates image restoration and super-resolution results using multiple quality metrics.
 
-PSNR (Peak Signal-to-Noise Ratio) = A traditional pixel-based metric that compares reconstructed images to ground truth references. Higher PSNR values usually mean lower reconstruction error.
+## Metrics
 
-While these metrics are useful for benchmarking and comparing models, they should not be treated as the final measure of quality. In practice, visual perception matters far more than a single number. An image can achieve strong PSNR or CLIP scores while still looking blurry, over-smoothed, or visually unnatural. Ultimately, the most important question is whether the output is actually useful and visually convincing to humans.
+### CLIP-Score
+CLIP-Score measures semantic similarity between images using the OpenAI CLIP model. Higher scores generally indicate that restored images preserve more meaningful visual content and structure.
 
+### PSNR
+PSNR (Peak Signal-to-Noise Ratio) is a traditional pixel-based metric that compares reconstructed images to ground truth references. Higher PSNR values usually indicate lower reconstruction error.
 
-Example Comparison
-Model	CLIP-Score ↑	PSNR ↑
+## Why Metrics Are Not Everything
 
-SwinIR	X	            X
+Although these metrics are useful for benchmarking and comparing models, they should not be treated as the final measure of quality. In practice, visual perception matters far more than a single number.
 
-Satlas	X             X
+An image can achieve strong PSNR or CLIP scores while still looking blurry, over-smoothed, or visually unnatural. Ultimately, the most important question is whether the output is visually convincing and actually useful for real-world applications.
 
-In this example, ADD INFORMATION LATER!!
+## Example Comparison
+
+| Model | CLIP-Score ↑ | PSNR ↑ |
+|-------|---------------|---------|
+| SwinIR | X | X |
+| Satlas | X | X |
+
+In this example, one model may achieve better pixel accuracy while another produces more visually pleasing or semantically meaningful results. The visually preferred output does not always correspond to the highest metric value.
 
 # Results
 GAN vs. Transformer based models
