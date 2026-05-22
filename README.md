@@ -71,6 +71,13 @@ Ultimately, the most important question is whether the output is visually convin
 
 ---
 
+# Results
+
+- GAN vs. Transformer-based model comparison
+- Visual output comparisons
+- Quantitative metric analysis
+
+
 # Example Comparison
 
 | Model | CLIP-Score ↑ | PSNR ↑ |
@@ -80,16 +87,7 @@ Ultimately, the most important question is whether the output is visually convin
 
 In this example, one model may achieve better pixel accuracy while another produces more visually convincing or semantically meaningful results. The visually preferred output does not always correspond to the highest metric value.
 
----
-
-# Results
-
-- GAN vs. Transformer-based model comparison
-- Visual output comparisons
-- Quantitative metric analysis
-
 (Add result images and metric tables here)
-
 ---
 
 # Future Improvements
