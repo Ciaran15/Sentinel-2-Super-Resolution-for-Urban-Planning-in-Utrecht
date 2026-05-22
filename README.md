@@ -12,6 +12,7 @@ The goal is to investigate whether Sentinel-2 imagery can be improved for applic
 - Disaster monitoring
 - Environmental analysis
 
+#### ADD MOVING EXAMPLE IMAGES WITH SATLAS ON THE LEFT LR IN THE MIDDLE AND SWIN IR ON THE RIGHT!!
 ---
 
 # Objectives
