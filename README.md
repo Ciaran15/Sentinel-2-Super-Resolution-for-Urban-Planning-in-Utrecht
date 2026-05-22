@@ -16,6 +16,7 @@ Winter Dataset
 This repository evaluates image restoration and super-resolution results using multiple quality metrics. Two commonly used metrics are:
 
 CLIP-Score = Measures semantic similarity between images using the OpenAI CLIP model. Higher scores generally indicate that restored images preserve more meaningful visual content and structure.
+
 PSNR (Peak Signal-to-Noise Ratio) = A traditional pixel-based metric that compares reconstructed images to ground truth references. Higher PSNR values usually mean lower reconstruction error.
 
 While these metrics are useful for benchmarking and comparing models, they should not be treated as the final measure of quality. In practice, visual perception matters far more than a single number. An image can achieve strong PSNR or CLIP scores while still looking blurry, over-smoothed, or visually unnatural. Ultimately, the most important question is whether the output is actually useful and visually convincing to humans.
@@ -23,7 +24,9 @@ While these metrics are useful for benchmarking and comparing models, they shoul
 
 Example Comparison
 Model	CLIP-Score ↑	PSNR ↑
+
 SwinIR	X	            X
+
 Satlas	X             X
 
 In this example, ADD INFORMATION LATER!!
