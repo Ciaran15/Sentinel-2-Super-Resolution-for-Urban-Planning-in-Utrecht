@@ -19,7 +19,6 @@ The goal is to investigate whether Sentinel-2 imagery can be improved for applic
 This project aims to:
 - Improve the spatial quality of Sentinel-2 imagery
 - Compare GAN-based and Transformer-based super-resolution approaches
-- Evaluate the usefulness of AI-enhanced satellite imagery for urban analysis
 - Analyze both quantitative metrics and visual quality differences
 
 ---
@@ -96,11 +95,7 @@ In this example, one model may achieve better pixel accuracy while another produ
 
 Potential future improvements include:
 - Cloud and shadow detection
-- Temporal image stacking
-- Multi-spectral feature integration
-- Additional evaluation metrics
-- Fine-tuning on local Dutch satellite imagery
-
+- Image stacking
 ---
 
 # How to Run
