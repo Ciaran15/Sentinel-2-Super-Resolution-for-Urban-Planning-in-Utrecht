@@ -1,7 +1,5 @@
 # Sentinel-2 Super Resolution for Urban Planning in Utrecht
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0-red)
 ![Status](https://img.shields.io/badge/status-work_in_progress-orange)
 
 This project focuses on enhancing and evaluating the spatial resolution of publicly available Sentinel-2 satellite imagery (10 m) using Dutch PDOK orthomosaics (7.5–25 cm) as ground truth data within the Utrecht municipal area.
