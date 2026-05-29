@@ -1,0 +1,137 @@
+datasets:
+  train:
+    batch_size_per_gpu: 2
+    gt_path: /home/datalab/zDatalab2/dataset/train/ground_truth
+    input_path: /home/datalab/zDatalab2/dataset/train/inputs
+    io_backend:
+      type: disk
+    name: train
+    num_worker_per_gpu: 2
+    phase: train
+    pin_memory: true
+    prefetch_mode: cpu
+    type: SimpleImagePairDataset
+    use_shuffle: true
+  val:
+    gt_path: /home/datalab/zDatalab2/dataset/val/ground_truth
+    input_path: /home/datalab/zDatalab2/dataset/val/inputs
+    io_backend:
+      type: disk
+    name: validation
+    phase: val
+    type: SimpleImagePairDataset
+    use_shuffle: false
+dist_params:
+  backend: nccl
+  port: 29500
+feed_disc_lr: true
+find_unused_parameters: true
+freeze_layers:
+- conv_first
+gan_gt_usm: false
+l1_gt_usm: true
+logger:
+  print_freq: 50
+  save_checkpoint_freq: 1000
+  use_tb_logger: true
+manual_seed: 0
+model_type: SSRESRGANModel
+name: esrgan_best_optuna
+network_d:
+  num_feat: 64
+  num_in_ch: 6
+  skip_connection: true
+  type: SSR_UNetDiscriminatorSN
+network_g:
+  num_block: 23
+  num_feat: 64
+  num_grow_ch: 32
+  num_in_ch: 3
+  num_out_ch: 3
+  type: SSR_RRDBNet
+num_gpu: 1
+path:
+  param_key_d: params
+  param_key_g: params_ema
+  pretrain_network_g: /home/datalab/zDatalab2/satlas-super-resolution/ssr/esrgan_1S2.pth
+  resume_state: null
+  strict_load_d: true
+  strict_load_g: false
+  visualization: /home/datalab/zDatalab2/satlas-super-resolution/results/esrgan_custom_dataset/visualization
+percep_gt_usm: true
+scale: 4
+test:
+  metrics:
+    psnr:
+      crop_border: 4
+      test_y_channel: false
+      type: calculate_psnr
+    ssim:
+      crop_border: 4
+      test_y_channel: false
+      type: calculate_ssim
+  save_img: true
+test_datasets:
+  test:
+    gt_path: /home/datalab/zDatalab2/dataset/test/ground_truth
+    input_path: /home/datalab/zDatalab2/dataset/test/inputs
+    io_backend:
+      type: disk
+    name: test
+    phase: test
+    type: SimpleImagePairDataset
+    use_shuffle: false
+train:
+  ema_decay: 0.9944962662387206
+  gan_feat_opt:
+    loss_weight: 0.5
+    n_scale: 3
+    num_D_outputs: 5
+    type: GANFeatLoss
+  gan_opt:
+    gan_type: wgan_softplus
+    loss_weight: 0.01011137723227533
+    type: GANLoss
+  net_d_init_iters: 0
+  net_d_iters: 1
+  net_d_reg_every: 16
+  optim_d:
+    lr: 1.065563409604704e-05
+    type: Adam
+  optim_g:
+    lr: 4.780511570794874e-05
+    type: Adam
+  perceptual_opt:
+    criterion: l1
+    layer_weights:
+      conv1_2: 0.1
+      conv2_2: 0.1
+      conv3_4: 1
+      conv4_4: 1
+      conv5_4: 1
+    perceptual_weight: 1.999118700557728
+    range_norm: true
+    style_weight: 1.5626221014003012
+    type: PerceptualLoss
+    use_input_norm: true
+    vgg_type: vgg19
+  pixel_opt:
+    loss_weight: 0.289392132523444
+    reduction: mean
+    type: L1Loss
+  scheduler:
+    gamma: 0.5
+    milestones:
+    - 20000
+    - 40000
+    type: MultiStepLR
+  total_iter: 80000
+  warmup_iter: 2000
+val:
+  metrics:
+    psnr:
+      crop_border: 4
+      test_y_channel: false
+      type: calculate_psnr
+  save_img: true
+  val_freq: 1000
