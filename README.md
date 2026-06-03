@@ -20,7 +20,7 @@ The goal is to investigate whether Sentinel-2 imagery can be improved for applic
 
 | Satlas (GAN) | Low Resolution (Sentinel-2) | SwinIR (Transformer) |
 |:---:|:---:|:---:|
-| ![Satlas](https://raw.githubusercontent.com/Ciaran15/Sentinel-2-Super-Resolution-for-Urban-Planning-in-Utrecht/main/SatlasSuperResolution/Summer/Figures/Satlas_Summer.png) | ![Low Resolution](https://raw.githubusercontent.com/Ciaran15/Sentinel-2-Super-Resolution-for-Urban-Planning-in-Utrecht/main/SatlasSuperResolution/Summer/Figures/LR_Summer.png) | *Coming soon* |
+| ![Satlas](https://raw.githubusercontent.com/Ciaran15/Sentinel-2-Super-Resolution-for-Urban-Planning-in-Utrecht/main/SatlasSuperResolution/Summer/Figures/SSR_Summer.png) | ![Low Resolution](https://raw.githubusercontent.com/Ciaran15/Sentinel-2-Super-Resolution-for-Urban-Planning-in-Utrecht/main/SatlasSuperResolution/Summer/Figures/LR_Summer.png) | *Coming soon* |
 
 
 ---
