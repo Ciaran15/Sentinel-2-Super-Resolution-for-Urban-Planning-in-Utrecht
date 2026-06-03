@@ -18,15 +18,10 @@ The goal is to investigate whether Sentinel-2 imagery can be improved for applic
 
 # Visual Comparison
 
-| Satlas | Low Resolution | SwinIR |
-|---|---|---|
-| Image Here | Image Here | Image Here |
+| Satlas (GAN) | Low Resolution (Sentinel-2) | SwinIR (Transformer) |
+|:---:|:---:|:---:|
+| ![Satlas](https://raw.githubusercontent.com/Ciaran15/Sentinel-2-Super-Resolution-for-Urban-Planning-in-Utrecht/main/SatlasSuperResolution/Summer/Figures/Satlas_Summer.png) | ![Low Resolution](https://raw.githubusercontent.com/Ciaran15/Sentinel-2-Super-Resolution-for-Urban-Planning-in-Utrecht/main/SatlasSuperResolution/Summer/Figures/LR_Summer.png) | *Coming soon* |
 
-### TODO
-- Add animated comparison GIFs
-- Add zoomed-in urban comparisons
-- Compare roads, buildings, vegetation, and water
-- Add before/after slider visualizations
 
 ---
 
