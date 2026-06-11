@@ -1,0 +1,1 @@
+Use this folder to save model weights, make sure the notebooks use the right paths.
