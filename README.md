@@ -20,7 +20,7 @@ The goal is to investigate whether Sentinel-2 imagery can be improved for applic
 
 | Satlas (GAN) | Low Resolution (Sentinel-2) | SwinIR (Transformer) |
 |:---:|:---:|:---:|
-| ![Satlas](x) | ![Low Resolution](x) | ![SwinIR](x) |
+| ![Satlas](x) | ![Low Resolution](x) | ![SwinIR](SwinIR/Summer/Figures/SwinIR_Summer_map.png) |
 
 ---
 
