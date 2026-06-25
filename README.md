@@ -55,12 +55,6 @@ The workflow consists of:
 - Quantitative evaluation using CLIP-Score and PSNR
 - Visual comparison between outputs and ground truth imagery
 
-### TODO
-- Add preprocessing workflow diagram
-- Add model architecture explanations
-- Add inference settings and hyperparameters
-- Add dataset preprocessing scripts
-
 ---
 
 # Dataset
@@ -68,15 +62,12 @@ The workflow consists of:
 The dataset consists of:
 - Sentinel-2 imagery
 - PDOK orthomosaics as high-resolution reference data
+- Image pairs: 324
+- Use own dataset for best performance, if needed it's possible to request ours.
 
 ### Seasonal Splits
 - Summer Dataset
-
-### TODO
-- Add dataset statistics
-- Add image resolution examples
-- Add train/validation/test split information
-- Add download instructions
+- Other season could be added later
 
 ---
 
@@ -136,11 +127,6 @@ In this example, one model may achieve better pixel accuracy while another produ
 ## Failure Cases
 (Add examples where models fail or produce artifacts)
 
-### TODO
-- Add side-by-side image comparisons
-- Add animated GIF comparisons
-- Add perceptual quality analysis
-- Add detailed benchmark tables
 
 ---
 
@@ -151,11 +137,6 @@ In this example, one model may achieve better pixel accuracy while another produ
 - Higher metric scores do not always correspond to visually preferred outputs
 - Seasonal variation impacts reconstruction quality
 
-### TODO
-- Add quantitative findings
-- Add seasonal analysis
-- Add visual quality observations
-
 ---
 
 # Limitations
@@ -165,11 +146,6 @@ Current limitations include:
 - Temporal mismatch between datasets
 - Seasonal lighting variations
 - Limited availability of perfectly aligned ground truth data
-
-### TODO
-- Investigate domain adaptation techniques
-- Add cloud removal preprocessing
-- Improve temporal alignment
 
 ---
 
@@ -189,17 +165,12 @@ Potential future improvements include:
 
 ```bash
 data/
-models/
-results/
+model_weights/
 notebooks/
-scripts/
+ssr/
+swinir/
 README.md
 ```
-
-### TODO
-- Organize preprocessing scripts
-- Add evaluation pipeline
-- Add automated inference scripts
 
 ---
 
@@ -222,4 +193,3 @@ All references can be found within the research paper.
 ## Data Sources
 - Sentinel-2
 - PDOK Orthomosaics
-
