@@ -71,7 +71,6 @@ The dataset consists of:
 
 ### Seasonal Splits
 - Summer Dataset
-- Winter Dataset
 
 ### TODO
 - Add dataset statistics
@@ -107,13 +106,16 @@ Ultimately, the most important question is whether the output is visually convin
 
 ---
 
-# Example Comparison
 
-| Model | CLIP-Score ↑ | PSNR ↑ |
-|-------|---------------|---------|
-| SwinIR | X | X |
-| Satlas | X | X |
+# Metric Comparison
 
+| Metric    | Minimum SwinIR | Minimum SSR | Average SwinIR | Average SSR | Maximum SwinIR | Maximum SSR |
+|------------|----------------|-------------|----------------|-------------|----------------|-------------|
+| PSNR       | 8.96           | 15.71       | 15.54          | 18.12       | 24.21          | 21.94       |
+| SSIM       | 0.16           | 0.13        | 0.34           | 0.31        | 0.80           | 0.59        |
+| LPIPS      | 0.52           | 0.25        | 0.71           | 0.26        | 0.92           | 0.33        |
+| CLIPScore  | 0.53           | 0.89        | 0.73           | 0.92        | 0.88           | 0.95        |
+Table 3. Quantitative metric comparison (can be found in the paper.)
 In this example, one model may achieve better pixel accuracy while another produces more visually convincing or semantically meaningful results. The visually preferred output does not always correspond to the highest metric value.
 
 ---
@@ -209,15 +211,8 @@ cd Sentinel-2-Super-Resolution-for-Urban-Planning-in-Utrecht
 pip install -r requirements.txt
 ```
 
-### TODO
-- Add CUDA requirements
-- Add model download instructions
-- Add environment setup instructions
-
----
-
 # References
-
+All references can be found within the research paper.
 ## Papers
 - SwinIR: Image Restoration Using Swin Transformer
 - Satlas Super-Resolution
@@ -226,7 +221,3 @@ pip install -r requirements.txt
 - Sentinel-2
 - PDOK Orthomosaics
 
-### TODO
-- Add citation links
-- Add BibTeX references
-- Add related research papers
