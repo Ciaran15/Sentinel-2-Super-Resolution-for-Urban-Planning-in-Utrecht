@@ -115,7 +115,9 @@ Ultimately, the most important question is whether the output is visually convin
 | SSIM       | 0.16           | 0.13        | 0.34           | 0.31        | 0.80           | 0.59        |
 | LPIPS      | 0.52           | 0.25        | 0.71           | 0.26        | 0.92           | 0.33        |
 | CLIPScore  | 0.53           | 0.89        | 0.73           | 0.92        | 0.88           | 0.95        |
+
 Table 3. Quantitative metric comparison (can be found in the paper.)
+
 In this example, one model may achieve better pixel accuracy while another produces more visually convincing or semantically meaningful results. The visually preferred output does not always correspond to the highest metric value.
 
 ---
